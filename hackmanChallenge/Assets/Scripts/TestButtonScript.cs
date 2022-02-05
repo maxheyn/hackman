@@ -34,7 +34,8 @@ public class TestButtonScript : MonoBehaviour
         {
             Debug.Log("Received: " + JsonUtility.FromJson<Word>(uwr.downloadHandler.text).word);
             Word apiWord = JsonUtility.FromJson<Word>(uwr.downloadHandler.text);
-            textGUI.text = apiWord.word;
+            textGUI.text = GameManager.censorWord(apiWord.word);
+            GameManager.currentWord = apiWord.word;
             yield return new WaitForSeconds(delay);
             button.interactable = true;
             button.GetComponentInChildren<Text>().text = "clicc me :D";
