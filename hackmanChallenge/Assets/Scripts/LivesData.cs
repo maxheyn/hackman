@@ -41,4 +41,6 @@ public class LivesData : MonoBehaviour
             sprites[i].SetActive(true);
         }
     }
+
+
 }
