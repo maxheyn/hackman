@@ -12,6 +12,6 @@ public class TestInputScript : MonoBehaviour
     public void GetInput()
     {
         string letter = this.gameObject.GetComponent<TMP_InputField>().text;
-        textGUI.text = GameManager.revealLetter(textGUI.text, GameManager.currentWord, letter[0]);
+        textGUI.text = GameManager.RevealLetter(textGUI.text, GameManager.currentWord, letter[0]);
     }
 }

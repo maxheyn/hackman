@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class LetterButton : MonoBehaviour
 {
-    public LetterButtonData data;
-    public void GuessLetter(string s)
+    public LetterButtonData btnData;
+    public LivesData livesData;
+
+    public void GuessLetter()
     {
-        data.guessField.text = GameManager.revealLetter(data.guessField.text, GameManager.currentWord, data.letter);
-        Debug.Log("Pressed: " + data.letter);
-        //gameObject.GetComponent<SpriteRenderer>().sprite = data.pressedSprite;
+        Debug.Log("GuessLetter: " + btnData.letter + "| Current word: " + GameManager.currentWord + "| guessField: " + btnData.guessField.text);
+        // successful guess
+        if (GameManager.currentWord.Contains(btnData.letter.ToString()))
+        {
+            btnData.guessField.text = GameManager.RevealLetter(btnData.guessField.text, GameManager.currentWord, btnData.letter);
+            Debug.Log("Successful guess!");
+        }
+        else // failed guess
+        {
+            livesData.TakeDamage();
+        }
+
+        // Debug.Log("Pressed: " + data.letter);
     }
 }

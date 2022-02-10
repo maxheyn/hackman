@@ -5,10 +5,8 @@ using System.Text;
 
 public static class GameManager
 {
-
     public static string currentWord = "";
-
-    public static string censorWord(string word)
+    public static string CensorWord(string word)
     {
         string censoredWord = "";
         for (int i = 0; i < word.Length - 1; i++)
@@ -20,7 +18,7 @@ public static class GameManager
         return censoredWord;
     }
 
-    public static string revealLetter(string censoredWord, string guessWord, char letter)
+    public static string RevealLetter(string censoredWord, string guessWord, char letter)
     {
         StringBuilder sb = new StringBuilder(censoredWord);
 
@@ -33,5 +31,15 @@ public static class GameManager
         }
 
         return sb.ToString();
+    }
+
+    public static void GameOver()
+    {
+        // ends the game
+    }
+
+    public static void Solved()
+    {
+        // word has been solved
     }
 }
