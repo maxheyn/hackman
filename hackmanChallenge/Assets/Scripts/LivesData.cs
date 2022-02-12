@@ -18,23 +18,18 @@ public class LivesData : MonoBehaviour
 
     public void TakeDamage()   // called from LetterButton
     {
-
         if (currentLives == 1)
         {
             // game over
-            //GameManager.GameOver();
+            GameManager.GameOver();
             sprites[maxLives - 1].GetComponent<Animator>().SetBool("dead", true);
             Debug.Log("Game Over");
         }
         else
         {
             currentLives--;
-            Debug.Log("Took damage: " + currentLives);
+            Debug.Log(maxLives - currentLives);
             sprites[maxLives - currentLives - 1].GetComponent<Animator>().SetBool("dead", true);
-            //sprites[maxLives - currentLives - 1].GetComponent<Animation>().wrapMode = WrapMode.Once;
-            //sprites[maxLives - currentLives - 1].GetComponent<Animation>().Play("JumpOff");
-            //sprites[maxLives - currentLives - 1].SetActive(false);
-
         }
     }
 

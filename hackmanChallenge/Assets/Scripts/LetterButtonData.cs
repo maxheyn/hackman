@@ -8,4 +8,7 @@ public class LetterButtonData
     public Sprite normalSprite;
     public Sprite pressedSprite;
     public TextMeshProUGUI guessField;
+
+    public AudioSource[] correctSounds;
+    public AudioSource[] wrongSounds;
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 
-public static class GameManager
+public class GameManager : MonoBehaviour
 {
     public static string currentWord = "";
     public static string CensorWord(string word)
@@ -36,6 +36,7 @@ public static class GameManager
     public static void GameOver()
     {
         // ends the game
+
     }
 
     public static void Solved()
