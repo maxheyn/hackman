@@ -7,6 +7,7 @@
 [Oo]bj/
 hackmanChallenge/[Bb]uild/
 hackmanChallenge/[Bb]uilds/
+hackmanChallenge/Assets/Scripts/APIHelper.*
 [Ll]ogs/
 [Mm]emoryCaptures/
 
