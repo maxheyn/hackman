@@ -12,12 +12,17 @@ public class LetterButton : MonoBehaviour
     {
         gameObject.GetComponent<Button>().interactable = false;
 
-
         if (GameManager.currentWord.Contains(btnData.letter.ToString()))
         {
             // successful guess
             btnData.guessField.text = GameManager.RevealLetter(btnData.guessField.text, GameManager.currentWord, btnData.letter);
             PlaySound(true);
+
+            //check for win
+            if (!btnData.guessField.text.Contains("_"))
+            {
+                livesData.Victory();
+            }
         }
         else
         {

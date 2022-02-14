@@ -32,15 +32,4 @@ public class GameManager : MonoBehaviour
 
         return sb.ToString();
     }
-
-    public static void GameOver()
-    {
-        // ends the game
-
-    }
-
-    public static void Solved()
-    {
-        // word has been solved
-    }
 }
