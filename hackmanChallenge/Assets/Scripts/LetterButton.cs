@@ -7,6 +7,7 @@ public class LetterButton : MonoBehaviour
 {
     public LetterButtonData btnData;
     public LivesData livesData;
+    public Button altButton;
 
     // Called when the user presses the buttons swimming in the water
     // Disables the button on press, and checks if the letter is in the word
@@ -14,6 +15,7 @@ public class LetterButton : MonoBehaviour
     public void GuessLetter()
     {
         gameObject.GetComponent<Button>().interactable = false;
+        altButton.interactable = false;
 
         if (GameManager.currentWord.Contains(btnData.letter.ToString()))
         {

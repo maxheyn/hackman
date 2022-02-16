@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ using System.Runtime.InteropServices;
 
 public class ExitGame : MonoBehaviour
 {
+
+    [DllImport("__Internal")]
+    private static extern void openWindow(string url);
     // Code for the exit button, depending on the platform it will either quit the game or open a new tab.
     public void doExitGame()
     {
@@ -16,7 +20,8 @@ public class ExitGame : MonoBehaviour
             Application.Quit();
         #elif (UNITY_WEBGL)
             // Open a new tab in the browser.
-            Application.OpenURL("https://github.com/maxheyn/hackman");
+            //Application.OpenURL("https://github.com/maxheyn/hackman");
+            openWindow("https://github.com/maxheyn/hackman");
         #endif
     }
 }
