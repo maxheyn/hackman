@@ -41,7 +41,7 @@ Aside from your standard hangman features, Skurj o' the Sees adds...
 <p align="center" id="dialogue">
   <h3>Dialogue System</h3>
 
-  <img src=".github/Dialogue.PNG" alt="dialoguesss">
+  <img src=".github/Dialogue.PNG" alt="dialoguesss" width=450px align="center">
     
   *Start your journey by meeting with the Sea Cap'n Enzeri. Find out more from her.*
 </p>
@@ -49,7 +49,7 @@ Aside from your standard hangman features, Skurj o' the Sees adds...
 <p align="center" id="lives">
   <h3>Animated Lives Display</h3>
 
-  <img src=".github/Lives.PNG" alt="livesss">
+  <img src=".github/Lives.PNG" alt="livesss" width=450px align="center">
 
   *Your remaining lives are displayed as your crewmates. Guess wrong they'll be walking the plank!* 
 </p>
@@ -57,7 +57,7 @@ Aside from your standard hangman features, Skurj o' the Sees adds...
 <p align="center" id="scoreboard">
   <h3>Scoreboard</h3>
 
-  <img src=".github/Scoreboard.PNG" alt="scoreboardss"/>
+  <img src=".github/Scoreboard.PNG" alt="scoreboardss" width=450px align="center">
 
   *Check your current score, progress on guessing the word, and best score in the current session.*
 </p>
@@ -66,7 +66,7 @@ Aside from your standard hangman features, Skurj o' the Sees adds...
 <p align="center" id="menu">
   <h3>Menu</h3>
 
-  <img src=".github/Menu.PNG" alt="menuss">
+  <img src=".github/Menu.PNG" alt="menuss" width=450px align="center">
 
   *Simple menu to change volume and swap between button animations.*
 </p>
