@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 
+// Holds basic information about the game.
+// This script is attached to the GameManager object.
 public class GameManager : MonoBehaviour
 {
     public static string currentWord = "";
@@ -30,6 +32,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        return sb.ToString();
+        return sb.ToString().ToUpper();
     }
 }

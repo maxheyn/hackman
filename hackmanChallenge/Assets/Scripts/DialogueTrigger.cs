@@ -8,6 +8,12 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue gameOverDialogue;
     public Dialogue victoryDialogue;
 
+    void Start()
+    {
+        // Starts the dialogue upon entering the scene.
+        TriggerDialogue();
+    }
+
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);

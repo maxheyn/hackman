@@ -50,3 +50,12 @@ TagManager:
   - name: Text
     uniqueID: 813399647
     locked: 0
+  - name: Dialogue
+    uniqueID: 3185089495
+    locked: 0
+  - name: btns
+    uniqueID: 9616583
+    locked: 0
+  - name: foreground
+    uniqueID: 196566497
+    locked: 0

@@ -2,31 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-// [System.Serializable]
-// public static class LivesData
-// {
-//     public static Sprite[] sprites;
-//     public static int maxLives = 6;
-//     public static int currentLives;
-// }
+using TMPro;
 
 public class LivesData : MonoBehaviour
 {
     public GameObject[] sprites;
     public Button[] buttons;
     public DialogueTrigger dt;
+    public TextMeshProUGUI streakCounter;
 
     public static int maxLives = 6;
     public static int currentLives = maxLives;
+    private int streak = 0;
+    private int best = 0;
 
-    public void TakeDamage()   // called from LetterButton
+    // Makes the player take damage and plays the appropriate animation.
+    // If the play is out of lives, the game is over.
+    public void TakeDamage()
     {
         if (currentLives == 1)
         {
             // game over
-
-            sprites[maxLives - 1].GetComponent<Animator>().SetBool("dead", true);
+            sprites[maxLives - 1].GetComponent<Animator>().SetBool("dead", true); //technically this doesn't show because of GameOveR() but it's here for the sake of completeness
             GameOver();
         }
         else
@@ -37,6 +34,7 @@ public class LivesData : MonoBehaviour
         }
     }
 
+    // Resets the UI and data values to their default values.
     private void Reset()
     {
         currentLives = maxLives;
@@ -51,17 +49,31 @@ public class LivesData : MonoBehaviour
         }
     }
 
+    // Called when the player does not have any lives left.
+    // Displays the word they didn't guess in the upcoming dialogue.
+    // Resets the streak counter.
     private void GameOver()
     {
+        streak = 0;
+        streakCounter.text = "Score: " + streak + " | Best: " + best;
         // Pop up Dialogue
+        dt.gameOverDialogue.sentences[0] = "The word was " + "\"" + GameManager.currentWord + "\"";
         dt.GameOverDialogue();
 
         // Reset lives
         Reset();
     }
 
+    // Called when the player successfully guesses the word.
+    // Adds to the streak counter and checks if the player has beaten their best score.
     public void Victory()
     {
+        streak++;
+        if (streak > best)
+        {
+            best = streak;
+        }
+        streakCounter.text = "Score: " + streak + " | Best: " + best;
         dt.VictoryDialogue();
         Reset();
     }
