@@ -75,6 +75,7 @@ Aside from your standard hangman features, Skurj o' the Sees adds...
   <img src=".github/DemoVideo.png" alt="demo header">
 </h2>
 
+https://user-images.githubusercontent.com/16215993/154369927-95f5ba9b-59cc-4424-a974-fea2108292ff.mp4
 
 <h2 id="feedback" align="center">
   <a href="https://github.com/maxheyn/hackman/issues">
