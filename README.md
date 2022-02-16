@@ -6,7 +6,7 @@
 
 [![](https://img.shields.io/github/v/tag/maxheyn/hackman?color=41aee7&label=latest%20release&logo=Github)](https://github.com/maxheyn/hackman/releases/latest) [![](https://img.shields.io/github/last-commit/maxheyn/hackman?color=41aee7&label=latest%20commit&logo=Github)](https://github.com/maxheyn/hackman/commits/main) [![](https://img.shields.io/github/issues/maxheyn/hackman?color=41aee7&logo=Github)](https://github.com/maxheyn/hackman/issues)
 
-[Releases][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Features](#features)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Commands](#commands)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Demo Video](#screenshots)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues][issues]
+[Releases][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Features](#features)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Screenshots](#screenshots)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Demo Video](#screenshots)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues][issues]
 
 
 **[Skurj o' the Sees](https://maxheyn.github.io/hackman)** is a pirate-themed version of the classic game, [Hangman](https://en.wikipedia.org/wiki/Hangman), developed for the Clemson Computer Science Hackman Challenge during February 2022. It features completely from-scratch artwork by the [developer](https://github.com/maxheyn), and is available for Windows, Android, and Linux, as well as any platform which can run WebGL in their browser.
