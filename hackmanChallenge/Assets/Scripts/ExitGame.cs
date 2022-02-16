@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DllImportAttribute = System.Runtime.InteropServices.DllImportAttribute;
 
 public class ExitGame : MonoBehaviour
 {
@@ -17,7 +16,7 @@ public class ExitGame : MonoBehaviour
             Application.Quit();
         #elif (UNITY_WEBGL)
             // Open a new tab in the browser.
-            OpenURL("https://github.com/maxheyn/hackman");
+            Application.OpenURL("https://github.com/maxheyn/hackman");
         #endif
     }
 }
