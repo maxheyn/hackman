@@ -42,7 +42,6 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            Debug.Log("Ending Dialogue");
             EndDialogue();
             NewWord();
             return;
@@ -93,7 +92,6 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Received: " + JsonUtility.FromJson<Word>(uwr.downloadHandler.text).word);
             Word apiWord = JsonUtility.FromJson<Word>(uwr.downloadHandler.text);
             string finalWord = apiWord.word;
 
