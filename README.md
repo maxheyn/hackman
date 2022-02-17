@@ -19,7 +19,7 @@
 
 Aside from your standard hangman features, Skurj o' the Sees adds...
 
-- [Custom Art Assets](instagram.com/_maxyp00/)
+- [Custom Art Assets][art]
     - All artwork is made from scratch by the developer!
 - [Multiple Platforms][release]
     - Available on Windows, Android, Linux, and any platform which can run WebGL in their browser.
@@ -93,3 +93,4 @@ Have a suggestion for me, or want to report a bug? Open an [issue][issues]!
 
 [release]:https://github.com/maxheyn/hackman/releases/latest "Latest Release (external link)"
 [issues]:https://github.com/maxheyn/hackman/issues "Issues (external link)"
+[art]:https://instagram.com/_maxyp00/ "Art (external link)"
