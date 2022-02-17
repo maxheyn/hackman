@@ -19,7 +19,7 @@
 
 Aside from your standard hangman features, Skurj o' the Sees adds...
 
-- [Custom Art Assets](#partymemberspowers)
+- [Custom Art Assets](instagram.com/_maxyp00/)
     - All artwork is made from scratch by the developer!
 - [Multiple Platforms][release]
     - Available on Windows, Android, Linux, and any platform which can run WebGL in their browser.
