@@ -9,7 +9,9 @@
 [Releases][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Features](#features)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Screenshots](#screenshots)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Demo Video](#demo)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues][issues]
 
 
-**[Skurj o' the Sees](https://maxheyn.github.io/hackman)** is a pirate-themed version of the classic game, [Hangman](https://en.wikipedia.org/wiki/Hangman), developed for the Clemson Computer Science Hackman Challenge during February 2022. It features completely from-scratch artwork by the [developer](https://github.com/maxheyn), and is available for Windows, Android, and Linux, as well as any platform which can run WebGL in their browser.
+**[Skurj o' the Sees](https://maxheyn.github.io/hackman)** is a pirate-themed version of the classic game, [Hangman](https://en.wikipedia.org/wiki/Hangman), developed for the Clemson Computer Science Hackman Challenge during February 2022. It features completely from-scratch artwork by the [developer](https://github.com/maxheyn), and is available for Windows, Android, and Linux, as well as any platform which can run WebGL in their browser.*
+
+****For the best user experience, I recommend using the Windows release, or playing the WebGL version on a Windows machine.***
 
 </div>
 
